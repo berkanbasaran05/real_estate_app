@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:real_estate_app/Pages/home_view.dart';
+import 'package:real_estate_app/Pages/login_view.dart';
 import 'package:real_estate_app/products/languages.dart';
 
 class IndexButton extends StatefulWidget {
@@ -15,7 +17,13 @@ class _IndexButtonState extends State<IndexButton> {
       width: 200,
       height: 50,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) {
+              return LoginView();
+            },
+          ));
+        },
         child: Text(
           LanguageItems.indexButtontitle,
           style: TextStyles.IndexButtonStyle,

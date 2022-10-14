@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class ImageItems {
   final String indexPic = "indexPic";
+  final String housePic = "housepic";
 }
 
 class PngImage extends StatelessWidget {
@@ -20,4 +21,39 @@ class PngImage extends StatelessWidget {
   }
 
   String get _nameWithPath => 'assets/images/$name.png';
+}
+
+class NewsImageWidget extends StatelessWidget {
+  const NewsImageWidget({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(30), // Image border
+      child: SizedBox.fromSize(
+        size: const Size.fromRadius(200), // Image radius
+        child: PngImage(name: ImageItems().housePic),
+      ),
+    );
+  }
+}
+
+class ProfileImagePic extends StatelessWidget {
+  const ProfileImagePic({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return CircleAvatar(
+      radius: 75,
+      backgroundColor: Color(0xffFDCF09),
+      child: CircleAvatar(
+        radius: 75,
+        backgroundImage: AssetImage("assets/images/biometri.png"),
+      ),
+    );
+  }
 }
