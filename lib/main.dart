@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           appBarTheme: AppBarTheme(color: Colors.white)),
       debugShowCheckedModeBanner: false,
-      home: const ProfileView(),
+      home: const HomeView(),
     );
   }
 }

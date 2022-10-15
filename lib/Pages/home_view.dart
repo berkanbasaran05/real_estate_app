@@ -80,6 +80,7 @@ class _HomeViewState extends State<HomeView> {
         //bottom side
         bottomNavigationBar: CurvedNavigationBar(
           backgroundColor: Colors.greenAccent,
+          buttonBackgroundColor: Colors.white,
           // ignore: prefer_const_literals_to_create_immutables
           items: <Widget>[
             Icon(Icons.home, size: 30),

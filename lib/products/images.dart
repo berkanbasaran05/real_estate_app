@@ -31,7 +31,7 @@ class NewsImageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(30), // Image border
+      borderRadius: BorderRadius.circular(40), // Image border
       child: SizedBox.fromSize(
         size: const Size.fromRadius(200), // Image radius
         child: PngImage(name: ImageItems().housePic),
