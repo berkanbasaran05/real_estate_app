@@ -3,7 +3,7 @@ import 'package:real_estate_app/Pages/Index_view.dart';
 import 'package:real_estate_app/Pages/chat_view.dart';
 import 'package:real_estate_app/Pages/home_view.dart';
 import 'package:real_estate_app/Pages/login_view.dart';
-import 'package:real_estate_app/Pages/message_view.dart';
+
 import 'package:real_estate_app/Pages/profile_view.dart';
 
 void main() {

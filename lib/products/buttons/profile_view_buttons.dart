@@ -170,3 +170,37 @@ class SettingProfile extends StatelessWidget {
     );
   }
 }
+
+class EditButton extends StatelessWidget {
+  const EditButton({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+        onPressed: (() => showDialog<String>(
+            context: context,
+            builder: (BuildContext context) => AlertDialog(
+                  title: Text('<3 HİS FUTURE WİFE SMAİKİ <3'),
+                  backgroundColor: Colors.green,
+                  content: const Text('I love you'),
+                  contentPadding: EdgeInsets.all(50),
+                  actions: <Widget>[
+                    TextButton(
+                        onPressed: () => Navigator.pop(context, 'Cancel'),
+                        child: Text(
+                          'Cancel',
+                          style: TextStyles.IndexButtonStyle,
+                        )),
+                    TextButton(
+                        onPressed: () => Navigator.pop(context, 'Cancel'),
+                        child: Text(
+                          'Cancel',
+                          style: TextStyles.LoginTitleStyle,
+                        ))
+                  ],
+                ))),
+        child: Text('Profili Düzenle'));
+  }
+}
