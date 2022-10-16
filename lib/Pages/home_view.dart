@@ -85,6 +85,7 @@ class _HomeViewState extends State<HomeView> {
           items: <Widget>[
             Icon(Icons.home, size: 30),
             Icon(Icons.map, size: 30),
+            Icon(Icons.message, size: 30),
             Icon(Icons.person, size: 30),
           ],
           onTap: ((index) {}),

@@ -57,3 +57,39 @@ class ProfileImagePic extends StatelessWidget {
     );
   }
 }
+
+class ChatProfileImagePic extends StatelessWidget {
+  const ChatProfileImagePic({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return CircleAvatar(
+      radius: 24,
+      backgroundColor: Color(0xffFDCF09),
+      child: CircleAvatar(
+        radius: 24,
+        backgroundImage: AssetImage("assets/images/biometri.png"),
+      ),
+    );
+  }
+}
+
+class MessageProfileImagePic extends StatelessWidget {
+  const MessageProfileImagePic({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return CircleAvatar(
+      radius: 20,
+      backgroundColor: Color(0xffFDCF09),
+      child: CircleAvatar(
+        radius: 24,
+        backgroundImage: AssetImage("assets/images/biometri.png"),
+      ),
+    );
+  }
+}
