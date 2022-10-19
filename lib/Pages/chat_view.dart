@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:new_gradient_app_bar/new_gradient_app_bar.dart';
-import 'package:real_estate_app/Pages/message_view.dart';
 
 import 'package:real_estate_app/products/images.dart';
+
+import 'message_view.dart';
 
 class ChatView extends StatefulWidget {
   const ChatView({Key? key}) : super(key: key);

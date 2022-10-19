@@ -22,36 +22,7 @@ class _MessageViewState extends State<MessageView> {
         backgroundColor: Colors.green,
       ),
       body: Column(
-        children: [
-          Expanded(child: Text('dassta')),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-            child: Container(
-              decoration: BoxDecoration(
-                  color: Theme.of(context).scaffoldBackgroundColor),
-              child: Row(
-                children: [
-                  IconButton(onPressed: () {}, icon: Icon(Icons.mic)),
-                  SizedBox(width: 10),
-                  Expanded(
-                    child: Container(
-                        decoration: BoxDecoration(
-                            color: Colors.white10,
-                            borderRadius: BorderRadius.circular(40)),
-                        child: Row(
-                          children: [
-                            const Icon(Icons.sentiment_satisfied_alt_outlined),
-                            const SizedBox(width: 10),
-                            Expanded(child: Message_view_textfield()),
-                            IconButton(onPressed: () {}, icon: Icon(Icons.send))
-                          ],
-                        )),
-                  )
-                ],
-              ),
-            ),
-          )
-        ],
+        children: [Expanded(child: Text('')), MessageInputField()],
       ),
     );
   }
